@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="255dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_marginEnd="20dp"
+    android:layout_height="388dp">
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="255dp"
+        android:layout_height="311dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_arrival"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="21WN reversible angora cardigan"
+        android:fontFamily="@font/tenorsans_regular"/>
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#DD8560"
+        android:textSize="16sp"
+        android:text="$120"/>
+</LinearLayout>

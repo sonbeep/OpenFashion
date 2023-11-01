@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="620dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_home_page" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="250dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:fontFamily="@font/bodonimoda_28pt_blackitalic"
+                        android:text="Luxury"
+                        android:textAllCaps="true"
+                        android:textColor="#99000000"
+                        android:textSize="39sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:fontFamily="@font/bodonimoda_28pt_blackitalic"
+                        android:text="Fashion"
+                        android:textAllCaps="true"
+                        android:textColor="#99000000"
+                        android:textSize="39sp" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/bodonimoda_28pt_blackitalic"
+                            android:text="&#x26;"
+                            android:textAllCaps="true"
+                            android:textColor="#99000000"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/bodonimoda_28pt_blackitalic"
+                            android:text="Accessories"
+                            android:textAllCaps="true"
+                            android:textColor="#99000000"
+                            android:textSize="39sp" />
+                    </TableRow>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="51dp"
+                    android:background="@drawable/bg_blacktrans30_conner20dp"
+                    android:fontFamily="@font/tenorsans_regular"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="8dp"
+                    android:text="Explore Collection"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_choosed" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_choose" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/ic_choose" />
+                </TableRow>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/tenorsans_regular"
+                android:gravity="center"
+                android:text="New Arrival"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="125dp"
+                android:src="@drawable/ic_line" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="42dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/tenorsans_regular"
+                        android:text="All"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/choosed_orange" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/tenorsans_regular"
+                        android:text="Apparel"
+                        android:textColor="@color/gray_scale"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/choosed_orange"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/tenorsans_regular"
+                        android:text="Dress"
+                        android:textColor="@color/gray_scale"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/choosed_orange"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/tenorsans_regular"
+                        android:text="Tshirt"
+                        android:textColor="@color/gray_scale"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/choosed_orange"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/tenorsans_regular"
+                        android:text="Bag"
+                        android:textColor="@color/gray_scale"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/choosed_orange"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </TableRow>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginHorizontal="25dp"
+                android:id="@+id/rc_arrival"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"/>
+            <TableRow
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="27dp"
+                >
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore More"
+                    android:fontFamily="@font/tenorsans_regular"
+                    android:textSize="16sp"/>
+                <ImageView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_more"/>
+            </TableRow>
+            <ImageView
+                android:layout_marginTop="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="125dp"
+                android:src="@drawable/ic_line" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_brand"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="3"/>
+            <ImageView
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="125dp"
+                android:src="@drawable/ic_line" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Collections"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="640dp"
+                android:src="@drawable/collection"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/video_collection"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Just for You"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/black"/>
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="125dp"
+                android:src="@drawable/ic_line" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                android:id="@+id/rc_foryou"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trending"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/black"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_trending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+            <LinearLayout
+                android:layout_marginTop="55dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#F2F2F2">
+                <ImageView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="98dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_logo"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="45dp"
+                    android:gravity="center"
+                    android:text="Making a luxurious lifestyle accessible for a generous group of women is our daily drive."
+                    android:textSize="14sp"
+                    android:textColor="#555555"
+                    android:fontFamily="@font/tenorsans_regular"
+                    android:paddingHorizontal="20dp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="125dp"
+                    android:src="@drawable/ic_line" />
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:paddingHorizontal="20dp"
+                            android:layout_width="0dp"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="50dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/sticker1"/>
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Fast shipping. Free on orders over $25."
+                                android:lines="2"
+                                android:fontFamily="@font/tenorsans_regular"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:paddingHorizontal="20dp"
+                            android:layout_width="0dp"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="50dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/sticker1"/>
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Fast shipping. Free on orders over $25."
+                                android:lines="2"
+                                android:fontFamily="@font/tenorsans_regular"/>
+                        </LinearLayout>
+
+
+                    </TableRow>
+                <TableRow
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:paddingHorizontal="20dp"
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/sticker1"/>
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fast shipping. Free on orders over $25."
+                            android:lines="2"
+                            android:fontFamily="@font/tenorsans_regular"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:paddingHorizontal="20dp"
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/sticker1"/>
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fast shipping. Free on orders over $25."
+                            android:lines="2"
+                            android:fontFamily="@font/tenorsans_regular"/>
+                    </LinearLayout>
+
+
+                </TableRow>
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_beu"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="30dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Follow Us"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/instagram_white"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:id="@+id/rc_infor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"/>
+            <include layout="@layout/footer"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

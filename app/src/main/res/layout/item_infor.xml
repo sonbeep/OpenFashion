@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="164dp"
+        android:layout_height="164dp"
+        android:src="@drawable/avatar"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mia"
+        android:textSize="14sp"
+        android:fontFamily="@font/tenorsans_regular"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="bottom"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"/>
+
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_action_bar">#E7EAEF</color>
+    <color name="bottom_footer">#C4C4C4</color>
+    <color name="text_footer">#555555</color>
+    <color name="gray_scale">#888888</color>
+</resources>
