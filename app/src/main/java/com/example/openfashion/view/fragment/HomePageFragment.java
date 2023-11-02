@@ -4,16 +4,20 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.viewpager.widget.ViewPager;
 
 import com.example.openfashion.R;
 import com.example.openfashion.databinding.HomePageFrgBinding;
 import com.example.openfashion.model.Arrival;
+import com.example.openfashion.model.Banner;
 import com.example.openfashion.model.Brand;
 import com.example.openfashion.model.ForYou;
 import com.example.openfashion.model.Infor;
 import com.example.openfashion.model.Trending;
 import com.example.openfashion.view.adapter.ArrivalAdapter;
+import com.example.openfashion.view.adapter.BannerAdapter;
 import com.example.openfashion.view.adapter.BrandAdapter;
+import com.example.openfashion.view.adapter.CountAdapter;
 import com.example.openfashion.view.adapter.ForYouAdapter;
 import com.example.openfashion.view.adapter.InforAdapter;
 import com.example.openfashion.view.adapter.TrendingAdapter;
@@ -29,6 +33,7 @@ public class HomePageFragment extends BaseFragment<HomePageFrgBinding, HomePageV
     protected Class<HomePageVM> getClassVM() {
         return HomePageVM.class;
     }
+    private CountAdapter countAdapter;
 
     @Override
     protected void initView() {
@@ -38,6 +43,8 @@ public class HomePageFragment extends BaseFragment<HomePageFrgBinding, HomePageV
         binding.rcTrending.setAdapter(new TrendingAdapter(context, viewModel.listTrending));
         binding.rcInfor.setAdapter(new InforAdapter(context, viewModel.listInfor));
         binding.rcForyou.setAdapter(new ForYouAdapter(context, viewModel.listForYou));
+        binding.vpBanner.setAdapter(new BannerAdapter(context, viewModel.listBanner));
+        binding.rcItemCount.setAdapter(new CountAdapter(context, viewModel.listCount));
     }
 
     @Override

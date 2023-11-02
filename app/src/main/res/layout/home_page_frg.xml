@@ -20,62 +20,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <ImageView
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_banner"
                     android:layout_width="match_parent"
-                    android:layout_height="620dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/bg_home_page" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="250dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="50dp"
-                        android:fontFamily="@font/bodonimoda_28pt_blackitalic"
-                        android:text="Luxury"
-                        android:textAllCaps="true"
-                        android:textColor="#99000000"
-                        android:textSize="39sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="70dp"
-                        android:fontFamily="@font/bodonimoda_28pt_blackitalic"
-                        android:text="Fashion"
-                        android:textAllCaps="true"
-                        android:textColor="#99000000"
-                        android:textSize="39sp" />
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="50dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/bodonimoda_28pt_blackitalic"
-                            android:text="&#x26;"
-                            android:textAllCaps="true"
-                            android:textColor="#99000000"
-                            android:textSize="30sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/bodonimoda_28pt_blackitalic"
-                            android:text="Accessories"
-                            android:textAllCaps="true"
-                            android:textColor="#99000000"
-                            android:textSize="39sp" />
-                    </TableRow>
-                </LinearLayout>
+                    android:layout_height="620dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -91,30 +39,17 @@
                     android:textColor="@color/white"
                     android:textSize="16sp" />
 
-                <TableRow
-                    android:layout_width="match_parent"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rc_item_count"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center"
                     android:layout_marginBottom="10dp"
-                    android:gravity="center">
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:gravity="center"/>
 
-                    <ImageView
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:src="@drawable/ic_choosed" />
 
-                    <ImageView
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:src="@drawable/ic_choose" />
-
-                    <ImageView
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:src="@drawable/ic_choose" />
-                </TableRow>
             </FrameLayout>
 
             <TextView
